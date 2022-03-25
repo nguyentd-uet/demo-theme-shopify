@@ -5,7 +5,7 @@
 
 {% assign isPersonalized = false %}
 {% assign vendor = product.vendor | downcase %}
-{% if vendor == 'Customall' %}
+{% if vendor == 'customall' %}
   {% section 'niftyjs-personalized-product-template' %}
 {% else %}
   {% section'product-template' %}
