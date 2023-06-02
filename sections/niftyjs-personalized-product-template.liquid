@@ -542,4 +542,7 @@
   $(document.body).on('change',"select[name=id]",function (e) {
    alert("change: " + $(this).val());
 });
+  $(window).on('variantChanged', () => {
+      alert("change: " + $(this).val());
+    })
 </script>
