@@ -537,3 +537,9 @@
   ]
 }
 {% endschema %}
+
+<script>
+  $('select[name=id]').change(function () {
+      alert("change: " + $(this).val());
+  });
+</script>
