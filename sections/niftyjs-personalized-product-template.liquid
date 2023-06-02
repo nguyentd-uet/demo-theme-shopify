@@ -539,9 +539,6 @@
 {% endschema %}
 
 <script>
-  $('select[name=id]').change(function () {
-      alert("change: " + $(this).val());
-  });
   $(document.body).on('change',"select[name=id]",function (e) {
    alert("change: " + $(this).val());
 });
