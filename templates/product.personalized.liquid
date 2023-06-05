@@ -56,3 +56,12 @@
   ]
 }
 </script>
+
+<script>
+  $(document).on('click', '.preview-wrapper .add_to_cart', function(){
+    $('.btn-add-to-cart').click();
+    $(this).html('<span>Adding to Cart...</span>');
+    $(this).prop('disabled', true);
+    $(this).css({ opacity: 0.5, cursor: 'not-allowed' });
+  });
+</script>
