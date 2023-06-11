@@ -19,7 +19,7 @@
 {% endunless %}
 
 {% assign current_variant = product.selected_or_first_available_variant %}
-{{ product | json }}
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org/",
@@ -55,6 +55,7 @@
     {%- endfor -%}
   ]
 }
+window.product = {{ product | json }}
 </script>
 
 <script>
