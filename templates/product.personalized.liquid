@@ -55,9 +55,11 @@
     {%- endfor -%}
   ]
 }
-window.product = {{ product | json }}
 </script>
 
+<script>
+window.product = {{ product | json }}
+</script>
 <script>
   $(document).on('click', '.preview-wrapper .add_to_cart', function(){
     $('.btn-add-to-cart').click();
