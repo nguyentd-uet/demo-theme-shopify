@@ -6,6 +6,7 @@
       window.money_format = "{{ shop.money_format }}";window.pbstoreid="[[.STORE_ID]]";
     </script>
     <script>
+      const productType = "{{ product.type }}";
       if (productType == 'Acrylic Keychain' || productType == 'Wooden Keychain') {
         window.markBestSeller = {
           option: 'Package',
