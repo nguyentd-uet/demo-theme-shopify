@@ -7,7 +7,7 @@
     </script>
     <script>
       const productType = "{{ product.type }}";
-      if (productType == 'Acrylic Keychain' || productType == 'Wooden Keychain') {
+      if (productType && productType.toLowerCase().includes('keychain')) {
         window.markBestSeller = {
           option: 'Package',
           value: 'Set Of 2',
