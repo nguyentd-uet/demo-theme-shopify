@@ -2,7 +2,18 @@
   {% assign isPersonalized = false %}
   {% assign vendor = product.vendor | downcase %}
   {% if vendor == 'customall' %}
-    <script>window.money_format = "{{ shop.money_format }}";window.pbstoreid="[[.STORE_ID]]";</script>
+    <script>
+      window.money_format = "{{ shop.money_format }}";window.pbstoreid="[[.STORE_ID]]";
+    </script>
+    <script>
+      if (productType == 'Acrylic Keychain' || productType == 'Wooden Keychain') {
+        window.markBestSeller = {
+          option: 'Package',
+          value: 'Set Of 2',
+          text: 'Popular',
+        }
+      }
+    </script>
     <style>
       form[action='/cart/add'] [data-shopify='payment-button'],
       form[action='/cart/add'] .shopify-payment-button{
