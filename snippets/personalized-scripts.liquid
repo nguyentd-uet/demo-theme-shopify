@@ -4,6 +4,7 @@
   {% if vendor == 'customall' %}
     <script>
       window.money_format = "{{ shop.money_format }}";window.pbstoreid="[[.STORE_ID]]";
+      window.contactEmail = "support@{{ shop.url }}";
     </script>
     <script>
       const productType = "{{ product.type }}";
